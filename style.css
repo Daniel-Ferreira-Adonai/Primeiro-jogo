@@ -10,7 +10,11 @@
   }
   
 
-.startMessage { width: 700px}
+.startMessage   {width: 1000px;
+bottom: 250px;
+right: -100px;
+position: absolute; }
+
 
   .mage {
     width: 300px;

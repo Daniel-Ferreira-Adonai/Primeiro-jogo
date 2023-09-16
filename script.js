@@ -123,7 +123,7 @@ function botaoClicado() {
     var coindamage = Math.floor(Math.random() * 4) + 1
     mago2_hp -= coindamage;
     mana -= 2
-    alert("O Mago dos sorteios tem muito dinheiro, sente pena de você e joga um trocado. + "<br>" + Mago Sapateiro HP: " + mago2_hp + ". "<br>" + current Mana is " + mana);
+    alert("O Mago dos sorteios tem muito dinheiro, sente pena de você e te joga um trocado. Mago Sapateiro HP: " + mago2_hp + ". current Mana is " + mana);
 
     playcoinSound()
     var moveElement = document.querySelector(".mage_of_sorteio");
@@ -169,7 +169,7 @@ function botaoClicado() {
         mageElement.removeEventListener("animationend", arguments.callee);
       });
     } else if (parseInt(caixaDoNumero.value) === 4 && randomTimeout >= 4) {
-      alert("you dodged");
+      alert("esquivo, esquivo esquivo, you dodged");
     } 
     else if (mago2_hp <= 0) { 
       mageElement.classList.add("damage");
